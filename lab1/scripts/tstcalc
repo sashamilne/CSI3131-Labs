@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# Start the calcloop process
+../bin/calcloop &        # starts process
+PID=$!            # gets pid for calcloop process
+echo "Started calcloop with PID $PID"
+
+# Start the Monitor
+mkdir -p ../logs
+../bin/procmon $PID > ../logs/calc.log &    # starts procmon
+MONPID=$!           # pid of procmon process 
+echo "Started monitor, saving ouput in calc.log"
+
+# let things run for 20 seconds
+echo "Letting things run for 20 seconds"
+echo "."
+echo "."
+echo "."
+sleep 20
+
+# Time to clean up running processes
+echo "Killing the calcloop process"
+kill $PID           # Stopped the calcloop program
+sleep 2             # give procmon a chance to terminate
+echo "Will kill the procmon process in case does not terminate (this is a precaution only)"
+kill $MONPID        # kill procmon process in case it does not terminate
+
+# All done advise where to find results
+echo "*** Check the log file calc.log for results ***"

@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# Start the cploop process
+../bin/cploop &          # starts cploop process
+PID=$!              # gets pid for cploop process
+echo "Started cploop with PID $PID"
+
+# Start the Monitor
+mkdir -p ../logs
+../bin/procmon $PID >../logs/cp.log &      # starts procmon
+MONPID=$!                   # pid of monitor process
+echo "Started monitor, saving ouput in cp.log"
+
+# let things run for 20 seconds
+echo "Letting things run for 20 seconds"
+echo "."
+echo "."
+echo "."
+sleep 20
+
+# Time to clean up running processes
+echo "Killing the cploop process"
+kill $PID           # Stopped the cploop program
+sleep 2             # give procomn a chance to terminate
+echo "Will kill the procmon process in case does not terminate (this is a precaution only)"
+kill $MONPID        # kill procmon in case it does not terminate
+
+# All done advise where to find results
+echo "*** Check the log file cp.log for results ***"

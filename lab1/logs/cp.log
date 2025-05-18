@@ -1,0 +1,26 @@
+
+
+        Monitoring /proc/7005/stat:
+
+Time        State           SysTm    UsrTm
+  0     Running                0        0
+  1     Sleeping(memory)       0        0
+  2     Sleeping(memory)       0        0
+  3     Running                0        0
+  4     Sleeping(memory)      30       11
+  5     Sleeping(memory)      30       11
+  6     Sleeping(memory)      30       11
+  7     Sleeping(memory)      65       19
+  8     Sleeping(memory)      65       19
+  9     Sleeping(memory)      65       19
+ 10     Running               87       23
+ 11     Sleeping(memory)      99       27
+ 12     Sleeping(memory)      99       27
+ 13     Sleeping(memory)      99       27
+ 14     Sleeping(memory)     130       38
+ 15     Sleeping(memory)     130       38
+ 16     Sleeping(memory)     130       38
+ 17     Sleeping(memory)     161       49
+ 18     Sleeping(memory)     161       49
+ 19     Sleeping(memory)     161       49
+procmon: Cannot open /proc/7005/stat, the monitored process is not running any more.
