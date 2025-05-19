@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.18)  18 MAY 2025 22:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.18)  18 MAY 2025 23:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,7 +337,7 @@ Overfull \hbox (6.30981pt too wide) in paragraph at lines 33--36
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 43.
 (./methodology.tex
-<../../screenshots/step1-lsproc.png, id=48, 489.32813pt x 357.58594pt>
+<../../screenshots/step1-lsproc.png, id=64, 489.32813pt x 357.58594pt>
 File: ../../screenshots/step1-lsproc.png Graphic file (type png)
 <use ../../screenshots/step1-lsproc.png>
 Package pdftex.def Info: ../../screenshots/step1-lsproc.png  used on input line 9.
@@ -347,7 +347,7 @@ Overfull \hbox (10.0821pt too wide) in paragraph at lines 2--12
 \OT1/cmr/m/n/12 Since a Linux en-vi-ron-ment is needed to ex-plore the \OT1/cmtt/m/n/12 /proc \OT1/cmr/m/n/12 filesys-tem and for POSIX com-pli-ance,
  []
 
-<../../screenshots/step2-3-catproc.png, id=50, 493.845pt x 355.3275pt>
+<../../screenshots/step2-3-catproc.png, id=66, 493.845pt x 355.3275pt>
 File: ../../screenshots/step2-3-catproc.png Graphic file (type png)
 <use ../../screenshots/step2-3-catproc.png>
 Package pdftex.def Info: ../../screenshots/step2-3-catproc.png  used on input line 15.
@@ -369,12 +369,12 @@ and I'll forget about whatever was undefined.
 
 
 [2 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step1-lsproc.png> </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step2-3-catproc.png>]
-<../../screenshots/step4-ps.png, id=71, 656.4525pt x 471.7625pt>
+<../../screenshots/step4-ps.png, id=87, 656.4525pt x 471.7625pt>
 File: ../../screenshots/step4-ps.png Graphic file (type png)
 <use ../../screenshots/step4-ps.png>
 Package pdftex.def Info: ../../screenshots/step4-ps.png  used on input line 35.
 (pdftex.def)             Requested size: 328.82707pt x 236.31258pt.
-<../../screenshots/step5-status.png, id=72, 525.965pt x 277.035pt>
+<../../screenshots/step5-status.png, id=88, 525.965pt x 277.035pt>
 File: ../../screenshots/step5-status.png Graphic file (type png)
 <use ../../screenshots/step5-status.png>
 Package pdftex.def Info: ../../screenshots/step5-status.png  used on input line 41.
@@ -392,7 +392,7 @@ and I'll forget about whatever was undefined.
 
 
 [3 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step4-ps.png> </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step5-status.png>]
-<../../screenshots/step6-tar.png, id=81, 189.70876pt x 178.6675pt>
+<../../screenshots/step6-tar.png, id=97, 189.70876pt x 178.6675pt>
 File: ../../screenshots/step6-tar.png Graphic file (type png)
 <use ../../screenshots/step6-tar.png>
 Package pdftex.def Info: ../../screenshots/step6-tar.png  used on input line 58.
@@ -425,51 +425,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--81
 
 
 [4 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step6-tar.png>]
-<../../screenshots/step7-scripts.png, id=88, 656.4525pt x 540.0175pt>
+<../../screenshots/step7-scripts.png, id=104, 656.4525pt x 540.0175pt>
 File: ../../screenshots/step7-scripts.png Graphic file (type png)
 <use ../../screenshots/step7-scripts.png>
 Package pdftex.def Info: ../../screenshots/step7-scripts.png  used on input line 93.
 (pdftex.def)             Requested size: 328.82707pt x 270.50247pt.
+<../../screenshots/step7-ls.png, id=105, 489.83pt x 73.27374pt>
+File: ../../screenshots/step7-ls.png Graphic file (type png)
+<use ../../screenshots/step7-ls.png>
+Package pdftex.def Info: ../../screenshots/step7-ls.png  used on input line 99.
+(pdftex.def)             Requested size: 328.82707pt x 49.1904pt.
 
 
-./methodology.tex:99: LaTeX Error: File `../../screenshots/step7-log' not found.
+[5 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step7-scripts.png> </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step7-ls.png>]
+<../../screenshots/step10-makefile.png, id=114, 656.4525pt x 557.08125pt>
+File: ../../screenshots/step10-makefile.png Graphic file (type png)
+<use ../../screenshots/step10-makefile.png>
+Package pdftex.def Info: ../../screenshots/step10-makefile.png  used on input line 124.
+(pdftex.def)             Requested size: 328.82707pt x 279.04996pt.
+<../../screenshots/step10-compiling.png, id=115, 656.4525pt x 557.08125pt>
+File: ../../screenshots/step10-compiling.png Graphic file (type png)
+<use ../../screenshots/step10-compiling.png>
+Package pdftex.def Info: ../../screenshots/step10-compiling.png  used on input line 131.
+(pdftex.def)             Requested size: 328.82707pt x 279.04996pt.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99 ....7\textwidth]{../../screenshots/step7-log}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
-)
+[6 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step10-makefile.png>])
 
-[5 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step7-scripts.png>]
-
-[6] (/Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/main.aux)
+[7 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step10-compiling.png>] (/Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 789C3266591B228E9EA3F76AFF8F1FCF;1603.
+(rerunfilecheck)             Checksum: 991697A2C4DDD016276AEA4378C248F7;2183.
  ) 
 Here is how much of TeX's memory you used:
- 9641 strings out of 471589
- 152977 string characters out of 5519765
- 543531 words of memory out of 5000000
- 36094 multiletter control sequences out of 15000+600000
+ 9661 strings out of 471589
+ 153496 string characters out of 5519765
+ 543877 words of memory out of 5000000
+ 36107 multiletter control sequences out of 15000+600000
  630859 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,7n,79p,331b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,331b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/sashamilne/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></Users/sashamilne/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/sashamilne/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/sashamilne/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/sashamilne/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/sashamilne/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on /Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/main.pdf (6 pages, 416399 bytes).
+Output written on /Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/main.pdf (7 pages, 544673 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 128 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

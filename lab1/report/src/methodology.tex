@@ -96,7 +96,43 @@ scripts to output the log files to a \texttt{logs} subdirectory for cleanliness.
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{../../screenshots/step7-log}
-    \caption{Running tstcalc and tstcp}
-    \label{fig:step7-log}
+    \includegraphics[width=0.7\textwidth]{../../screenshots/step7-ls}
+    \caption{Confirming generation of \texttt{log} files using \texttt{ls}}
+    \label{fig:step7-ls}
 \end{figure}
+\noindent
+I forgot to take screenshots of the verification that the \texttt{log} files
+were generated using \texttt{ls}, so I had to do it after the fact using a cloned
+version of \texttt{lab1} on my Macbook Air, which is why the filepaths are not consistent.
+
+\subsection{Programming mon.c}\label{subsec:programming-mon.c}
+The program \texttt{mon.c} is intended to take the name of another program as an argument.
+Using this argument, it launches the other program and monitors it using procmon.
+The first challenge of this spec was to convert the relative path
+passed in through \texttt{argv} to an absolute path accessible by \texttt{execlp}.
+
+\subsection{Compiling mon.c}\label{subsec:compiling-mon.c}
+When it comes to compiling from source in C, I believe it is almost
+always worth the effort to create a \texttt{Makefile}
+instead of manually calling \texttt{gcc} everytime you want to compile a binary.
+I also took the time to reorganize the project structure for cleanliness.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../../screenshots/step10-makefile}
+    \caption{Creating a Makefile to automate compilation process}
+    \label{fig:step10-makefile}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../../screenshots/step10-compiling}
+    \caption{Running Makefile to recompile binaries}
+    \label{fig:step10-compiling}
+\end{figure}
+
+\noindent
+As demonstrated in \textit{Figure 9}, the result is the same as manually
+calling \texttt{gcc -o bin/mon src/mon.c} except it is cleaner and more
+organized.
+
