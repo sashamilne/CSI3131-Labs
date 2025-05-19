@@ -65,8 +65,8 @@ After extracting the contents of \texttt{lab1.tar},
 I moved everything to my workspace directory and reorganized the
 project structure for neatness.
 Inside the \texttt{lab1} directory, there are three compiled binaries:
-\texttt{procmon}, \texttt{calcloop}, and \texttt{cploop}.\\
-
+\texttt{procmon}, \texttt{calcloop}, and \texttt{cploop}.
+\subsubsection{Analysis of Binaries}
 \noindent
 The purpose of the \texttt{procmon} program is to monitor the
 status of a process given its PID\@.
@@ -74,3 +74,29 @@ The program accepts an argument \texttt{PID} which it then monitors
 using the \texttt{proc} filesystem.\\
 
 \noindent
+\texttt{cploop} is a program that creates a file named \textit{fromfile}
+containing 500 thousand \texttt{"x"} characters and runs ten iterations of a loop that
+sleeps for 10 seconds and copies the contents of \textit{fromfile} to a new
+file named \textit{tofile}.\\
+
+\noindent
+\texttt{calcloop} is a program that runs 10 iterations of a loop that sleeps
+for 3 seconds then increments a variable 400 million times
+
+\subsection{Running Provided Scripts}\label{subsec:running-provided-scripts}
+The next step is to run the scripts \texttt{tstcalc} and \texttt{tstcp} provided
+in the \texttt{lab1} directory.
+I moved the scripts to a \texttt{scripts} subdirectory and slightly modified the
+scripts to output the log files to a \texttt{logs} subdirectory for cleanliness.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../../screenshots/step7-scripts}
+    \caption{Running tstcalc and tstcp}
+    \label{fig:step7-scripts}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../../screenshots/step7-log}
+    \caption{Running tstcalc and tstcp}
+    \label{fig:step7-log}
+\end{figure}

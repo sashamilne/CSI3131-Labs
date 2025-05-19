@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}     % For images
+\usepackage{amsmath}      % For math equations
+\usepackage{geometry}     % Page layout
+\usepackage{booktabs}     % Nice tables
+\usepackage{float}        % Improved control of figure placement
+\usepackage[none]{hyphenat}
+\usepackage{hyperref}
+
+
+\geometry{margin=1in}
+
+
+\title{Lab 1 - Observing Process Behaviour}
+\author{
+    Sasha Milne \\
+    Course: CSI3131Z \\
+    Professor: Mohamed Ibrahim \\
+    University of Ottawa
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% \begin{abstract}
+% A brief summary of the experiment, the key findings, and conclusion.
+% \end{abstract}
+
+\section{Introduction}\label{sec:introduction}
+
+This lab introduces fundamental operating system concepts by introducing the
+\texttt{/proc} directory --
+a virtual filesystem that provides access to process states.
+
+
+\section{Objectives}\label{sec:objectives}
+
+The objectives of this lab are as follows:
+
+\begin{enumerate}
+    \item \textbf{Process Monitoring via \texttt{/proc}:}
+    To examine how a process executes and changes via the \texttt{/proc}
+    virtual filesystem by directly inspecting its contents using CLI programs
+    such as \texttt{cat}.
+    \item \textbf{Executing POSIX System Calls in C:}
+    To develop and test simple C programs that demonstrate the use of
+    \texttt{fork()} and \texttt{exec()} system calls for process creation and control.
+\end{enumerate}
+
+\section{Methodology}\label{sec:methodology}
+\input{methodology}
+
+\section{Results}\label{sec:results}
+Present your data clearly using tables and figures.
+
+
+\section{Discussion}\label{sec:discussion}
+Interpret your results.
+Compare with theoretical expectations.
+Explain discrepancies.
+
+\section{Conclusion}\label{sec:conclusion}
+
+
+
+\section*{References}
+\begin{itemize}
+    \item Author, *Title*, Journal Name, Year.
+    \item Author, *Title*, Book Name, Publisher, Year.
+\end{itemize}
+
+\end{document}
