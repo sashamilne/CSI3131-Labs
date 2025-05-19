@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.18)  18 MAY 2025 23:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.18)  19 MAY 2025 15:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -337,7 +337,7 @@ Overfull \hbox (6.30981pt too wide) in paragraph at lines 33--36
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 43.
 (./methodology.tex
-<../../screenshots/step1-lsproc.png, id=64, 489.32813pt x 357.58594pt>
+<../../screenshots/step1-lsproc.png, id=72, 489.32813pt x 357.58594pt>
 File: ../../screenshots/step1-lsproc.png Graphic file (type png)
 <use ../../screenshots/step1-lsproc.png>
 Package pdftex.def Info: ../../screenshots/step1-lsproc.png  used on input line 9.
@@ -347,7 +347,7 @@ Overfull \hbox (10.0821pt too wide) in paragraph at lines 2--12
 \OT1/cmr/m/n/12 Since a Linux en-vi-ron-ment is needed to ex-plore the \OT1/cmtt/m/n/12 /proc \OT1/cmr/m/n/12 filesys-tem and for POSIX com-pli-ance,
  []
 
-<../../screenshots/step2-3-catproc.png, id=66, 493.845pt x 355.3275pt>
+<../../screenshots/step2-3-catproc.png, id=74, 493.845pt x 355.3275pt>
 File: ../../screenshots/step2-3-catproc.png Graphic file (type png)
 <use ../../screenshots/step2-3-catproc.png>
 Package pdftex.def Info: ../../screenshots/step2-3-catproc.png  used on input line 15.
@@ -357,24 +357,14 @@ Package pdftex.def Info: ../../screenshots/step2-3-catproc.png  used on input li
 [1
 
 {/Users/sashamilne/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-./methodology.tex:19: Undefined control sequence.
-l.19 \afterfloat
-                
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
 
 [2 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step1-lsproc.png> </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step2-3-catproc.png>]
-<../../screenshots/step4-ps.png, id=87, 656.4525pt x 471.7625pt>
+<../../screenshots/step4-ps.png, id=95, 656.4525pt x 471.7625pt>
 File: ../../screenshots/step4-ps.png Graphic file (type png)
 <use ../../screenshots/step4-ps.png>
 Package pdftex.def Info: ../../screenshots/step4-ps.png  used on input line 35.
 (pdftex.def)             Requested size: 328.82707pt x 236.31258pt.
-<../../screenshots/step5-status.png, id=88, 525.965pt x 277.035pt>
+<../../screenshots/step5-status.png, id=96, 525.965pt x 277.035pt>
 File: ../../screenshots/step5-status.png Graphic file (type png)
 <use ../../screenshots/step5-status.png>
 Package pdftex.def Info: ../../screenshots/step5-status.png  used on input line 41.
@@ -392,7 +382,7 @@ and I'll forget about whatever was undefined.
 
 
 [3 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step4-ps.png> </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step5-status.png>]
-<../../screenshots/step6-tar.png, id=97, 189.70876pt x 178.6675pt>
+<../../screenshots/step6-tar.png, id=105, 189.70876pt x 178.6675pt>
 File: ../../screenshots/step6-tar.png Graphic file (type png)
 <use ../../screenshots/step6-tar.png>
 Package pdftex.def Info: ../../screenshots/step6-tar.png  used on input line 58.
@@ -425,54 +415,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--81
 
 
 [4 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step6-tar.png>]
-<../../screenshots/step7-scripts.png, id=104, 656.4525pt x 540.0175pt>
+<../../screenshots/step7-scripts.png, id=112, 656.4525pt x 540.0175pt>
 File: ../../screenshots/step7-scripts.png Graphic file (type png)
 <use ../../screenshots/step7-scripts.png>
 Package pdftex.def Info: ../../screenshots/step7-scripts.png  used on input line 93.
 (pdftex.def)             Requested size: 328.82707pt x 270.50247pt.
-<../../screenshots/step7-ls.png, id=105, 489.83pt x 73.27374pt>
+<../../screenshots/step7-ls.png, id=113, 489.83pt x 73.27374pt>
 File: ../../screenshots/step7-ls.png Graphic file (type png)
 <use ../../screenshots/step7-ls.png>
 Package pdftex.def Info: ../../screenshots/step7-ls.png  used on input line 99.
 (pdftex.def)             Requested size: 328.82707pt x 49.1904pt.
+<../../screenshots/path-conversion.png, id=114, 1109.14375pt x 682.55pt>
+File: ../../screenshots/path-conversion.png Graphic file (type png)
+<use ../../screenshots/path-conversion.png>
+Package pdftex.def Info: ../../screenshots/path-conversion.png  used on input line 115.
+(pdftex.def)             Requested size: 328.82707pt x 202.35033pt.
 
 
 [5 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step7-scripts.png> </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step7-ls.png>]
-<../../screenshots/step10-makefile.png, id=114, 656.4525pt x 557.08125pt>
+<../../screenshots/starting-processes.png, id=123, 1195.46625pt x 830.10126pt>
+File: ../../screenshots/starting-processes.png Graphic file (type png)
+<use ../../screenshots/starting-processes.png>
+Package pdftex.def Info: ../../screenshots/starting-processes.png  used on input line 121.
+(pdftex.def)             Requested size: 328.82707pt x 228.32288pt.
+
+
+[6 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/path-conversion.png> </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/starting-processes.png>]
+<../../screenshots/step10-makefile.png, id=130, 656.4525pt x 557.08125pt>
 File: ../../screenshots/step10-makefile.png Graphic file (type png)
 <use ../../screenshots/step10-makefile.png>
-Package pdftex.def Info: ../../screenshots/step10-makefile.png  used on input line 124.
+Package pdftex.def Info: ../../screenshots/step10-makefile.png  used on input line 142.
 (pdftex.def)             Requested size: 328.82707pt x 279.04996pt.
-<../../screenshots/step10-compiling.png, id=115, 656.4525pt x 557.08125pt>
+<../../screenshots/step10-compiling.png, id=131, 656.4525pt x 557.08125pt>
 File: ../../screenshots/step10-compiling.png Graphic file (type png)
 <use ../../screenshots/step10-compiling.png>
-Package pdftex.def Info: ../../screenshots/step10-compiling.png  used on input line 131.
+Package pdftex.def Info: ../../screenshots/step10-compiling.png  used on input line 149.
 (pdftex.def)             Requested size: 328.82707pt x 279.04996pt.
 
 
-[6 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step10-makefile.png>])
+[7 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step10-makefile.png>])
+<../../screenshots/calclog.png, id=139, 660.4675pt x 454.69875pt>
+File: ../../screenshots/calclog.png Graphic file (type png)
+<use ../../screenshots/calclog.png>
+Package pdftex.def Info: ../../screenshots/calclog.png  used on input line 60.
+(pdftex.def)             Requested size: 328.82707pt x 226.38441pt.
 
-[7 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step10-compiling.png>] (/Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/main.aux)
+
+[8 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/step10-compiling.png>]
+<../../screenshots/cplog.png, id=146, 660.4675pt x 456.70625pt>
+File: ../../screenshots/cplog.png Graphic file (type png)
+<use ../../screenshots/cplog.png>
+Package pdftex.def Info: ../../screenshots/cplog.png  used on input line 78.
+(pdftex.def)             Requested size: 328.82707pt x 227.3839pt.
+
+
+[9 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/calclog.png>]
+
+[10 </Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/../../screenshots/cplog.png>] (/Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 991697A2C4DDD016276AEA4378C248F7;2183.
+(rerunfilecheck)             Checksum: E91904AC2407ADC6264C0129B6C6DAD0;2389.
  ) 
 Here is how much of TeX's memory you used:
- 9661 strings out of 471589
- 153496 string characters out of 5519765
- 543877 words of memory out of 5000000
- 36107 multiletter control sequences out of 15000+600000
+ 9720 strings out of 471589
+ 155421 string characters out of 5519765
+ 544087 words of memory out of 5000000
+ 36157 multiletter control sequences out of 15000+600000
  630859 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,7n,79p,331b,465s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,7n,79p,331b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/sashamilne/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></Users/sashamilne/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/sashamilne/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/sashamilne/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/sashamilne/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></Users/sashamilne/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on /Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/main.pdf (7 pages, 544673 bytes).
+Output written on /Users/sashamilne/Documents/GitHub/CSI3131-Labs/lab1/report/out/main.pdf (10 pages, 944209 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 166 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 202 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 202 words of extra memory for PDF output out of 10000 (max. 10000000)
 

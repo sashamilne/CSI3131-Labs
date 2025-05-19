@@ -2,10 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-#ifdef __APPLE__
-#include <libproc.h>
-#include <sys/resource.h>
-#endif
+
 #define BUFFSIZE 50
 
 typedef struct dStruct {
@@ -60,43 +57,6 @@ int main(int argc, char **argv)
         exit(-1);
     }
 
-#ifdef __APPLE__
-    for (int t = 0; ; t++) {
-        int pid = atoi(argv[1]);
-
-        struct rusage_info_v2 ri;
-
-        if (proc_pid_rusage(pid, RUSAGE_INFO_V2, (rusage_info_t *)&ri) == 0) {
-            data.userTime = ri.ri_user_time;
-            data.sysTime = ri.ri_system_time;
-        } else {
-            perror("proc_pid_rusage failed");
-            exit(-1);
-        }
-
-        struct proc_taskallinfo tai;
-
-        const int ret = proc_pidinfo(pid, PROC_PIDTASKALLINFO, 0, &tai, sizeof(tai));
-        if (ret <= 0) {
-            perror("proc_pidinfo failed");
-            return 1;
-        }
-
-        struct proc_bsdinfo *bsd = &tai.pbsd;
-
-        int pbi_status = bsd->pbi_status;
-
-        switch(pbi_status) {
-            case 2: data.state = "Running          "; break;
-            case 1: data.state = "Sleeping         "; break;
-            case 4: data.state = "Zombie           "; break;
-            case 3: data.state = "Traced/Stopped   "; break;
-        }
-        printf("%3d     %s %6ld %8ld\n", t, data.state, data.sysTime, data.userTime);
-        sleep(1);
-    }
-
-#else
     sprintf(statFile, "/proc/%s/stat", argv[1]);
 
     printf("\n\n        Monitoring %s:\n\n", statFile);
@@ -108,5 +68,5 @@ int main(int argc, char **argv)
             printf("%3d     %s %6ld %8ld\n", t, data.state, data.sysTime, data.userTime);
         sleep(1);
     }
-#endif
+
 }

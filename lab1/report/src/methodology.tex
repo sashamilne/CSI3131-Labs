@@ -16,7 +16,7 @@ I then used basic CLI tools to explore the \texttt{/proc} filesystem.
     \caption{Further exploration of \texttt{/proc} using \texttt{cat}}
     \label{fig:step2-3-catproc}
 \end{figure}
-\afterfloat
+\noindent
 In \textit{Figure 1}, the CLI output of \texttt{ls /proc} can be observed.
 This command lists all the contents of the \texttt{/proc} directory to \texttt{stdout}.
 Each folder with a number contains information about a process referenced by its Process ID (PID)\@.
@@ -110,6 +110,26 @@ The program \texttt{mon.c} is intended to take the name of another program as an
 Using this argument, it launches the other program and monitors it using procmon.
 The first challenge of this spec was to convert the relative path
 passed in through \texttt{argv} to an absolute path accessible by \texttt{execlp}.
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{../../screenshots/path-conversion}
+        \caption{Finding the absolute path}
+        \label{fig:path-conversion}
+\end{figure}
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{../../screenshots/starting-processes}
+        \caption{Starting \texttt{program} and \texttt{procmon} processes}
+        \label{fig:starting-processes}
+\end{figure}
+\noindent
+\textit{Figure 9} demonstrates the usage of \texttt{fork} and \texttt{exec}
+to start new processes.
+\texttt{Fork} creates a copy of the existing process (child process) and returns the PID
+of the child in the parent process while returning 0 for the child process.
+\texttt{Exec} replaces the existing process with a new one.
+Using these two functions, we can start two new processes, \texttt{procmon} and
+the process given in \texttt{argv[1]}
 
 \subsection{Compiling mon.c}\label{subsec:compiling-mon.c}
 When it comes to compiling from source in C, I believe it is almost

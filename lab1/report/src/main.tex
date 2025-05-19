@@ -37,7 +37,7 @@ a virtual filesystem that provides access to process states.
 
 \section{Objectives}\label{sec:objectives}
 
-The objectives of this lab are as follows:
+The goals of this lab are as follows:
 
 \begin{enumerate}
     \item \textbf{Process Monitoring via \texttt{/proc}:}
@@ -54,7 +54,34 @@ The objectives of this lab are as follows:
 
 \section{Results}\label{sec:results}
 \subsection{Analysis of Log Files}\label{subsec:analysis-of-log-files}
+\subsubsection{calc.log}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../../screenshots/calclog}
+    \caption{Output of calc.log}
+    \label{fig:calc-log}
+\end{figure}
+\noindent
+The output of this log file shows a pattern of the process
+sleeping for three seconds and then running for one.
+This follows the behaviour of the code exactly as \texttt{calcloop}
+is programmed to sleep for three seconds before each iteration.
+\texttt{SysTm} stays at 0 for the entirety of the execution which is also
+expected as the program does not operate in kernel mode at any point.
+Finally, we see fairly intensive increases in \texttt{UsrTm} when the program is running.
+This is due to CPU-intensive looping (400 million increments) each iteration which uses
+exclusively user-space computation.
+
+\subsubsection{cp.log}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../../screenshots/cplog}
+    \caption{Output of cp.log}
+    \label{fig:cp-log}
+\end{figure}
 \subsection{Testing mon.c}\label{subsec:testing-mon.c}
+\noindent
+The output of this process shows
 
 
 \section{Discussion}\label{sec:discussion}
