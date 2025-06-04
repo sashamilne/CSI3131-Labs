@@ -11,6 +11,8 @@ Description:  This program first creates a file containing 500,000 x characters
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 #define BFSIZE 1
 int main()
@@ -36,7 +38,7 @@ int main()
            /* open the files */
        frf = open("fromfile",O_RDONLY); /* for reading */
        if(frfp==NULL)exit(1);
-       tof = open("tofile",O_WRONLY); /* for writing */
+       tof = open("tofile",O_WRONLY | O_CREAT); /* for writing */
        if(frfp==NULL)exit(1);
          /* copy bytes one at a time */
        while( (sz=read(frf,buffer,BFSIZE)) != 0) write(tof,buffer,sz);

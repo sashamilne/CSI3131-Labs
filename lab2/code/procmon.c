@@ -7,6 +7,7 @@ Description: This program provides similar functions to the shell scripts
 --------------------------------------------------------------------------*/
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 #define BUFFSIZE 50
 #define OK 0
@@ -25,6 +26,8 @@ Description: The main function processes command line arguments and invokes
              to the standard output the information collected. This should
              be a relatively simple function.
 --------------------------------------------------------------------------*/
+int getData(char *statFile, DataStruct *data);
+
 int main(int argc, char **argv)
 {
     DataStruct  data;

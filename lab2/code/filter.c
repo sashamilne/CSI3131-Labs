@@ -9,6 +9,7 @@ Description:  Quick and dirty code. In particular, gets() is not a
 ---------------------------------------------------------------------*/
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /* It's all done in main */
 int main(int argc, char **argv)
@@ -20,12 +21,12 @@ int main(int argc, char **argv)
     /* Simply copy the first five lines */
     for(i=0; i<5; i++) 
     {
-        if (gets(buffer)==NULL)
+        if (fgets(buffer, sizeof(buffer), stdin)==NULL)
             exit(-1); /* procmon produces 5 header lines - fatal error */
         else puts(buffer);
     }
 
-    while(gets(buffer)) 
+    while(fgets(buffer, sizeof(buffer), stdin)) 
     {
         sscanf(buffer, "%*s %s", state);
         if (strcmp(state, oldstate))  /* copy only if different from oldstate */

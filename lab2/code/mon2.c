@@ -32,6 +32,22 @@ int main(int argc, char **argv)
 
     /* First Step: Create the first process to run the program from the command line */
 
+    pid_t program_pid = fork()
+
+    // If process fails to fork
+    if (program_pid < 0)
+    {
+        perror("Failed to fork process");
+        exit(-1);
+    }
+    // Child Branch
+    if (program_pid == 0)
+    {
+        execlp(program, program, NULL);
+        perror("Failed to execute program");
+    }
+
+
     /* Second step: Create the pipe to be used for connecting procmon to filter */
 
     /* Third step: Lets create the filter process - don't forget to connect to the pipe */

@@ -7,6 +7,7 @@ Description:  This program runs 10 iterations of a loop that
 --------------------------------------------------------------------------*/
 
 #include <stdio.h>
+#include <unistd.h>
 
 int main()
 {
