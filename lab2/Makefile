@@ -1,8 +1,8 @@
 # Makefile
 
 CC = gcc
-SRC_DIR = code
-BIN_DIR = .
+SRC_DIR = src
+BIN_DIR = bin
 
 PROGRAMS = procmon mon2 calcloop cploop filter
 SOURCES = $(addprefix $(SRC_DIR)/, $(addsuffix .c, $(PROGRAMS)))
