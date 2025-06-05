@@ -37,22 +37,60 @@ int main(int argc, char **argv)
     // If process fails to fork
     if (program_pid < 0)
     {
-        perror("Failed to fork process");
-        exit(-1);
+        perror("Failed to fork process - program.");
+        return 1;
     }
     // Child Branch
     if (program_pid == 0)
     {
         execlp(program, program, NULL);
-        perror("Failed to execute program");
+        perror("Failed to execute process - program.");
+        return 1;
     }
-
 
     /* Second step: Create the pipe to be used for connecting procmon to filter */
 
+    int pipefd[2];
+
+    if(pipe(pipefd) == -1)
+    {
+        perror("Failed to create pipe.");
+        return 1;
+    }
+
     /* Third step: Lets create the filter process - don't forget to connect to the pipe */
 
+    pid_t filter_pid;
+    filter_pid = fork();
+
+    if(filter_pid < 0)
+    {
+        perror("Failed to fork process - filter");
+        return 1;
+    }
+    if(filter_pid == 0)
+    {
+        execlp("filter", "filter", NULL);
+        perror("Failed to execute filter program");
+    }
+
     /* Fourth step: Lets create the procmon process - don't forget to connect to the pipe */
+
+    pid_t procmon_pid;
+    procmon_pid = fork();
+
+    if(procmon_pid < 0)
+    {
+        perror("Failed to fork process - filter");
+        return 1;
+    }
+
+    if(procmon_pid == 0)
+    {
+        execlp("procmon", "procmon", NULL);
+        perror("Failed to execute filter program");
+    }
+
 
     /* Fifth step: Let things run for 20 seconds */
     sleep(20);
@@ -62,6 +100,7 @@ int main(int argc, char **argv)
        2. Sleep for 2 seconds 
        3. Kill the procmon and filter processes
     */
+    kill()
 
 
     return(0);  /* All done */
