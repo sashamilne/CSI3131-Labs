@@ -9,8 +9,12 @@ Run **make** to create the binaries
 Run make from inside the lab2 directory
 
 ### Executing programs
-To execute mon2.c run
+To execute mon2.c with calcloop being monitored, run
+```bash
+bin/mon2.c calcloop
+```
+Same thing with cploop
+
 ```bash
 bin/mon2.c cploop
-bin/mon2.c calcloop
 ```
