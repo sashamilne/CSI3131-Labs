@@ -3,10 +3,10 @@
 Make sure you have essential build tools installed  
 Run **make** to create the binaries
 
-## Lab 3
+## Lab 2
 
 #### Recompiling binaries
-Run make from inside the lab2 directory
+Run **make** from inside the lab2 directory
 
 ### Executing programs
 To execute mon2.c with calcloop being monitored, run
@@ -18,3 +18,6 @@ Same thing with cploop
 ```bash
 bin/mon2.c cploop
 ```
+
+### Mandelbrot
+TODO
