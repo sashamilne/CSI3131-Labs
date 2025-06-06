@@ -14,11 +14,11 @@ public class MandelBrot
 	    try 
 	    {
 	            System.out.println("Hello - Creating MandelBrot Diagram");
-		        new MBFrame(Double.valueOf(args[0]),
-			    	       Double.valueOf(args[1]),
-			    	       Double.valueOf(args[2]),
-			               Integer.valueOf(args[3]),
-			               Integer.valueOf(args[4]));
+		        MBFrame frame = new MBFrame(Double.parseDouble(args[0]),
+			    	       Double.parseDouble(args[1]),
+			    	       Double.parseDouble(args[2]),
+			               Integer.parseInt(args[3]),
+			               Integer.parseInt(args[4]));
 	    }
 	    catch(NumberFormatException e)
 	    {
