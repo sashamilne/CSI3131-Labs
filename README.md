@@ -19,5 +19,24 @@ Same thing with cploop
 bin/mon2.c cploop
 ```
 
-### Mandelbrot
-TODO
+### Compiling MandelBrot
+To compile the MandelBrot java program, run
+```bash
+javac MandelBrot.java
+```
+from the MandelBrot directory.
+
+To clean the .class files (for recompiling), run
+```bash
+rm *.class
+```
+
+If you make changes to the sourcefiles (i.e.) MBCanvas.java, you will need to recompile the specific .class file.
+You can also clean the .class files and recompile the whole thing from source.
+
+### Running MandelBrot
+
+To run the program (default arguments), run
+```bash
+java MandelBrot -2 2 4 600 600 
+```
