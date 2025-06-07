@@ -5,7 +5,7 @@ Run **make** to create the binaries
 
 ## Lab 2
 
-#### Recompiling binaries
+### Recompiling binaries
 Run **make** from inside the lab2 directory
 
 ### Executing programs
