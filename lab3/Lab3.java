@@ -148,6 +148,6 @@ class Traversier extends Thread // la classe pour le traversier
 
 	// methodes pour manipuler la charge du traversier
 	public int getCharge()      { return(charge); }
-	public void ajouteCharge()  { charge = charge + 1; }
-	public void enleveCharge()  { charge = charge - 1 ; }
+	public void ajouteCharge()  { charge++; }
+	public void enleveCharge()  { charge--; }
 }
