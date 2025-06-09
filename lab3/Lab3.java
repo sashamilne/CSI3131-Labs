@@ -1,10 +1,7 @@
-import java.util.Random;
-import java.util.concurrent.Semaphore;
-
 public class Lab3
 {
 	// Configuration
-        final static int PORT0 = 0;
+	final static int PORT0 = 0;
 	final static int PORT1 = 1;
 	final static int CHARGEMAX = 5;
 
@@ -23,14 +20,14 @@ public class Lab3
 
 			/* Partons les fils */
  		trav.start();
-		for (i=0; i<NOMBRE_AUTOS; i++) automobile[i].start();  // Démarre les fils automobiles
-		ambulance.start();  // Démarre le fil ambulance.
+		for (i=0; i<NOMBRE_AUTOS; i++) automobile[i].start();  // Demarre les fils automobiles
+		ambulance.start();  // Demarre le fil ambulance.
 
 		try {trav.join();} catch(InterruptedException e) { }; // On attend que le traversier termine.
 		System.out.println("Traversier arreter");
 		// Arrete les autos
-		for (i=0; i<NOMBRE_AUTOS; i++) automobile[i].interrupt(); // On arrête les fils automobiles.
-		ambulance.interrupt(); // On arrête le fil ambulance.
+		for (i=0; i<NOMBRE_AUTOS; i++) automobile[i].interrupt(); // On arrete les fils automobiles.
+		ambulance.interrupt(); // On arrete le fil ambulance.
 	}
 }
 
