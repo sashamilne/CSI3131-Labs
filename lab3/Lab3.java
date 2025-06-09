@@ -1,3 +1,7 @@
+import java.util.Random;
+import java.util.concurrent.Semaphore;
+
+
 public class Lab3
 {
 	// Configuration
