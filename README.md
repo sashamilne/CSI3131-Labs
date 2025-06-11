@@ -40,3 +40,20 @@ To run the program (default arguments), run
 ```bash
 java MandelBrot -2 2 4 600 600 
 ```
+
+## Lab 3
+
+### Compiling Lab 3
+To compile the program, run
+```bash
+javac Lab3.java
+```
+from the lab3 directory.
+
+### Running Lab 3
+
+To run the program, use
+```bash
+java Lab3
+```
+
